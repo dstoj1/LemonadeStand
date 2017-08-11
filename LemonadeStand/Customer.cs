@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Program
+    public class Customer
     {
-        static void Main(string[] args)
+
+    }
+    private void MakeCustomer()
+    {
+        for (int i =0, i <  i++)
         {
-            Player player = new Player();
-            player.weather
+            customer = new customer();
+            
         }
     }
+
 }

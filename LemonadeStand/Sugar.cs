@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Program
+    public class Sugar
     {
-        static void Main(string[] args)
+        public Sugar()
         {
-            Player player = new Player();
-            player.weather
+
         }
+
     }
 }
