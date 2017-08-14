@@ -8,15 +8,18 @@ namespace LemonadeStand
 {
     public class Customer
     {
-
-    }
-    private void MakeCustomer()
-    {
-        for (int i =0, i <  i++)
+        int randomCustomer;
+        public Customer()
         {
-            customer = new customer();
-            
-        }
-    }
 
+        }
+
+
+        public void MakeCustomer()
+        {
+            Random random = new Random();
+            randomCustomer = random.Next(0, 150);
+
+        }
+    }     
 }

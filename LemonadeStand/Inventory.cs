@@ -8,28 +8,21 @@ namespace LemonadeStand
 {
     public class Inventory 
     {
-        public List<Lemons> LemonList;
+        public List<Lemon> LemonList;
         public List<Sugar> SugarList;
         public List<Ice> IceList;
         public List<Cups> CupsList;
 
         public Inventory()
         {
-            //Sweeter Lemonade
-            //5 Lemons
-            //2 cups of sugar
-            //2 quarts of water
             
-
-            //More Sour Lemonade
-            //6 Lemons
-            //1 cup of sugar
-            //2 quarts of water
-
-         
-             //Method to subtract from inventory
-             //Method to make 
-            //Display amount 
+            //Start $ amount-----$25.00
+             //Method to subtract from inventory when I sell products
+             //Method to make more lemonade to add to lemon inventory etc...
+             //
+            //Display profit or loss for the day
+            //forward profit and loss to the following day
+            //
         }
         
     }

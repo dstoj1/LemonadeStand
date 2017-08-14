@@ -19,7 +19,7 @@ namespace LemonadeStand
             Random random = new Random();
             int randomNumber = random.Next(0, 4);
             string[] choices = new string[] { "Sunny", "Partly Cloudy", "Cloudy", "Rainy" };
-            TodaysWeather = choices[randomNumber].ToLower();
+            TodaysWeather = choices[randomNumber];
 
         }
         public void MakeWeather()

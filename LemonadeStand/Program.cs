@@ -10,8 +10,12 @@ namespace LemonadeStand
     {
         static void Main(string[] args)
         {
-            Player player = new Player();
-            player.weather
+            Game game = new Game();
+            game.RunGame();
+            Console.ReadKey();
+            
+
+             
         }
     }
 }

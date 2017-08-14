@@ -10,7 +10,7 @@ namespace LemonadeStand
     {
         public double lemons;
         public double cups;
-        public double ice;
+        public double iceCubes;
         public double sugar;
 
         public Store()
@@ -20,7 +20,6 @@ namespace LemonadeStand
         {
             Console.WriteLine("How many lemons would you like? \n 10 for $1.50 \n 20 for $3.25 \n 30 for $5.50");
             double Number = double.Parse(Console.ReadLine());
-            Number *= 10;
             double price;
             if (Number == 10)
             {
@@ -30,15 +29,21 @@ namespace LemonadeStand
             {
                 price = 3.50;
             }
-            else
+            else if (Number == 30)
             {
                 price = 4.25;
+            }
+            else
+            {
+                Console.WriteLine("Incorrect Amount, Please try again");
+                price = 0;
+                SellLemons(player);
             }
             if (price < player.money)
             {
                 for (double i = 0; i < Number; i++)
                 {
-                    Lemons lemon = new Lemons();
+                    Lemon lemon = new Lemon();
                     player.inventory.LemonList.Add(lemon);
                 }
                 player.money -= price;
@@ -52,8 +57,7 @@ namespace LemonadeStand
         public void SellSugar(Player player)
         {
             Console.WriteLine("How much sugar would you like to buy \n 8 cups for $1.25 \n 16 cups for $2.25 \n 32 cups for $4.25");
-            double Number = double.Parse(Console.ReadLine());
-            Number *= 2;
+            double Number = double.Parse(Console.ReadLine());           
             double price;
             if (Number == 8)
             {
@@ -63,9 +67,15 @@ namespace LemonadeStand
             {
                 price = 2.25;
             }
-            else
+            else if (Number == 32)
             {
                 price = 4.25;
+            }
+            else
+            {
+                Console.WriteLine("Incorrect Amount, Please try again");
+                price = 0;
+                SellSugar(player);
             }
             if (price < player.money)
             {
@@ -86,8 +96,7 @@ namespace LemonadeStand
         {
             Console.WriteLine("How many cups would you like \n 25 cups for $.97 \n 50 cups for $1.75 \n 100 cups for $3.16");
             double Number = double.Parse(Console.ReadLine());
-            double price;
-            Number *= 2;
+            double price;      
             if (Number == 25)
             {
                 price = .97;
@@ -96,9 +105,15 @@ namespace LemonadeStand
             {
                 price = 1.75;
             }
-            else
+            else if (Number == 100)
             {
                 price = 3.16;
+            }
+            else
+            {
+                Console.WriteLine("Incorrect Amount, Please try again");
+                price = 0;
+                SellCups(player);
             }
             if (price < player.money)
             {
@@ -115,9 +130,9 @@ namespace LemonadeStand
                 //Send back to the begining
             }
         }
-        public void SellIce(Player player)
+        public void SellIceCubes(Player player)
         {
-            Console.WriteLine("How much ice would you like to buy \n 125 Ice Cubes for $.97 \n 250 Ice Cube for $2.00 \n 500 Ice Cubes for $4.25 ");
+            Console.WriteLine("How many ice cubes would you like to buy \n 125 Ice Cubes for $.97 \n 250 Ice Cube for $2.00 \n 500 Ice Cubes for $4.25 ");
             double Number = double.Parse(Console.ReadLine());
             double price;
             if (Number == 125)
@@ -126,11 +141,17 @@ namespace LemonadeStand
             }
             else if (Number == 250)
             {
-                price = 2.00
+                price = 2.00;
+            }
+            else if(Number == 500)
+            {
+                price = 4.25;
             }
             else
             {
-                price = 4.25
+                Console.WriteLine("Incorrect Amount, Please try again");
+                price = 0;
+                SellIceCubes(player);
             }
             if (price < player.money)
             {

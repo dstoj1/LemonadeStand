@@ -8,14 +8,15 @@ namespace LemonadeStand
 {
     public class Ice
     {
-        private double Ice;
+        private double IceCubes;
         public Ice()
         {
 
         }
-        public void Ice
-        {
-            get 
-        }
+        //Ice melts everyday, so need ice everyday
+      //  public void Ice
+        //{
+          //  get 
+        //}
     }
 }
