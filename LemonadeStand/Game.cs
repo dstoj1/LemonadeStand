@@ -30,8 +30,10 @@ namespace LemonadeStand
            weather.GetWeather();
            weather.MakeWeather();
            store.GetSupplies(player);
+            player.inventory.DisplayInventory();
         }
     }
+
 
     // if start amount is lower then the end amount then there is a loss for the day or week
     // if start amount is higher then the end amount then there is a profit for the day or week
@@ -44,6 +46,5 @@ namespace LemonadeStand
    
     //if price of the 1.50 4% people will buy it weather it is hot or cold
     //if hot outside and price is 1.00 40% of the people will like it.
-
-    
+ 
 }  

@@ -12,6 +12,7 @@ namespace LemonadeStand
         public Store store = new Store();
         public double money = 25.00;
         public double total;
+        public double count = 0;
       
 
         

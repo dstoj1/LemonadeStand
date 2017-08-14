@@ -49,7 +49,8 @@ namespace LemonadeStand
                 }
                 player.money -= price;
                 Console.WriteLine(player.money);
-                Console.ReadLine();
+                
+                
             }
             else
             {
@@ -88,6 +89,8 @@ namespace LemonadeStand
                     player.inventory.SugarList.Add(sugar);
                 }
                 player.money -= price;
+                Console.WriteLine(player.money);
+       
             }
             else
             {
@@ -126,6 +129,7 @@ namespace LemonadeStand
                     player.inventory.CupsList.Add(cups);
                 }
                 player.money -= price;
+                Console.WriteLine(player.money);
             }
             else
             {
@@ -164,6 +168,7 @@ namespace LemonadeStand
                     player.inventory.IceList.Add(ice);
                 }
                 player.money -= price;
+                Console.WriteLine(player.money);
             }
             else
             {
