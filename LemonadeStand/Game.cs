@@ -14,7 +14,7 @@ namespace LemonadeStand
         Day day;
         Weather weather;
         Customer customer;
-        string Supplies;
+        
 
 
         public Game()
@@ -24,32 +24,12 @@ namespace LemonadeStand
            store = new Store();
            weather = new Weather();
         }
-        public void GetSupplies()
-        {
-            Console.WriteLine("What would you like to purchase? \n Lemons \n Sugar \n Ice Cubes \n Cups");
-            Supplies = Console.ReadLine().ToLower();
-
-            switch (Supplies)
-            {
-                case "lemons":
-                    store.SellLemons(player);
-                    break;
-                case "sugar":
-                    store.SellSugar(player);
-                    break;
-                case "ice cubes":
-                    store.SellIceCubes(player);
-                    break;
-                case "cups":
-                    store.SellCups(player);
-                    break;               
-            }
-        }
+       
         public void RunGame()
         {
-          //  weather.GetWeather();
-            //weather.MakeWeather();
-            GetSupplies();
+           weather.GetWeather();
+           weather.MakeWeather();
+           store.GetSupplies(player);
         }
     }
 

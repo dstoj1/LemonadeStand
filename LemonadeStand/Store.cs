@@ -12,6 +12,7 @@ namespace LemonadeStand
         public double cups;
         public double iceCubes;
         public double sugar;
+        public string Supplies;
 
         public Store()
         {
@@ -23,15 +24,15 @@ namespace LemonadeStand
             double price;
             if (Number == 10)
             {
-                price = 2.00;
+                price = 1.50;
             }
             else if (Number == 20)
             {
-                price = 3.50;
+                price = 3.25;
             }
             else if (Number == 30)
             {
-                price = 4.25;
+                price = 5.50;
             }
             else
             {
@@ -47,11 +48,13 @@ namespace LemonadeStand
                     player.inventory.LemonList.Add(lemon);
                 }
                 player.money -= price;
+                Console.WriteLine(player.money);
+                Console.ReadLine();
             }
             else
             {
                 Console.WriteLine("Sorry you don't have enough money.");
-                //send back to begining to pick sugar etc.
+                GetSupplies(player);
             }
         }
         public void SellSugar(Player player)
@@ -89,7 +92,7 @@ namespace LemonadeStand
             else
             {
                 Console.WriteLine("Sorry you don't have enough money.");
-                //send back to begining to pick sugar etc.
+                GetSupplies(player);
             }
         }
         public void SellCups(Player player)
@@ -127,7 +130,7 @@ namespace LemonadeStand
             else
             {
                 Console.WriteLine("Sorry you don't have enough money.");
-                //Send back to the begining
+                GetSupplies(player);
             }
         }
         public void SellIceCubes(Player player)
@@ -165,8 +168,29 @@ namespace LemonadeStand
             else
             {
                 Console.WriteLine("Sorry you don't have enough money.");
-                //Send back to the begining
+                GetSupplies(player);
             }
         }
-   }
+        public void GetSupplies(Player player)
+        {
+            Console.WriteLine("What would you like to purchase? \n Lemons \n Sugar \n Ice Cubes \n Cups");
+            Supplies = Console.ReadLine().ToLower();
+
+            switch (Supplies)
+            {
+                case "lemons":
+                    SellLemons(player);
+                    break;
+                case "sugar":
+                    SellSugar(player);
+                    break;
+                case "ice cubes":
+                    SellIceCubes(player);
+                    break;
+                case "cups":
+                    SellCups(player);
+                    break;
+            }
+        }
+    }
 }

@@ -15,18 +15,7 @@ namespace LemonadeStand
         public Lemon()
         {
 
-        }
-        public void LemonAge()
-        {
-            while (i = 0; i < 3; i++)
-            {
-
-            }
-
-        }
-        
-           
-        
+        }  
        // public void LemonAge()
        // {
        //     RoundAge++;

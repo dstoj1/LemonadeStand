@@ -10,9 +10,9 @@ namespace LemonadeStand
     {
         public Inventory inventory = new Inventory();
         public Store store = new Store();
-        public double money;
+        public double money = 25.00;
         public double total;
-        public double 
+      
 
         
         public Player()
@@ -26,10 +26,7 @@ namespace LemonadeStand
 
         // Money
         //   Starting amount is $25.00
-        public void AddTotals()
-        {
-
-        }
+         
 
 
      // write a method for list of  lemons
