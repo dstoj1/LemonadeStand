@@ -16,19 +16,19 @@ namespace LemonadeTest
             weather.GetWeather();
             //Assert
             Assert.IsTrue(weather.TodaysWeather == "Sunny" || weather.TodaysWeather == "Partly Cloudy" || weather.TodaysWeather == "Cloudy" || weather.TodaysWeather == "Rainy");
-            
+
         }
 
         [TestMethod]
 
-        public void MakeWeather_Sunny_Temp85()
+        public void MakeWeather_Sunny_Temp86()
         {
             Weather weather = new Weather();
-            weather.TodaysWeather = "Sunnhjhjhjy";
+            weather.TodaysWeather = "Sunny";
             //Act
             weather.MakeWeather();
             //Assert
-            Assert.AreEqual(weather.Temp, 86);
+            Assert.AreEqual(weather.Temperature, 86);
         }
-    }
+    }  
 }

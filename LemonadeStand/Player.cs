@@ -10,8 +10,7 @@ namespace LemonadeStand
     {
         public Inventory inventory = new Inventory();
         public Store store = new Store();
-        public double money = 25.00;
-        public double total;
+        public Wallet wallet = new Wallet();         
         public double count = 0;
       
 

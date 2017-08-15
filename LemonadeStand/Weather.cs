@@ -9,7 +9,7 @@ namespace LemonadeStand
     public class Weather
     {
         public string TodaysWeather;
-        public int Temp;
+        public int Temperature;
         public Weather()
         {
 
@@ -28,19 +28,19 @@ namespace LemonadeStand
             {
                 case "Sunny":
                     Console.WriteLine("Sunny and Beautiful \n High 86 Today \n");
-                    Temp = 86;
+                    Temperature = 86;
                     break;
                 case "Partly Cloudy":
                     Console.WriteLine("Warm \n High 81 \n");
-                    Temp = 81;
+                    Temperature = 81;
                     break;
                 case "Cloudy":
                     Console.WriteLine("Cloudy and Muggy \n High 78 \n");
-                    Temp = 78;
+                    Temperature = 78;
                     break;
                 case "Rainy":
                     Console.WriteLine("Rainy and Cold \n High 65 \n");
-                    Temp = 65;
+                    Temperature = 65;
                     break;
                 default:
                     break;
