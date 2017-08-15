@@ -36,7 +36,7 @@ namespace LemonadeStand
             {
                 Console.WriteLine("Incorrect Amount, Please try again");
                 total = 0;
-                SellLemons(player, Number);
+                return;
             }
             if (player.wallet.RemoveMoney(total))
             {
@@ -62,7 +62,7 @@ namespace LemonadeStand
             {
                 Console.WriteLine("Incorrect Amount, Please try again");
                 total = 0;
-                SellSugar(player, Number);
+                return;
             }
             if (player.wallet.RemoveMoney(total))
             {
@@ -88,7 +88,7 @@ namespace LemonadeStand
             {
                 Console.WriteLine("Incorrect Amount, Please try again");
                 total = 0;
-                SellCups(player, Number);
+                return;
             }     
             if(player.wallet.RemoveMoney(total))
             {
@@ -114,7 +114,7 @@ namespace LemonadeStand
             {
                 Console.WriteLine("Incorrect Amount, Please try again");
                 total = 0;
-                SellIceCubes(player, Number);
+                return;
             }
             if (player.wallet.RemoveMoney(total))
             {
@@ -143,7 +143,7 @@ namespace LemonadeStand
                         SellSugar(player, Number);
                         break;
                     case "ice cubes":
-                        Console.WriteLine("How many cups would you like \n 25 cups for $.97 \n 50 cups for $1.75 \n 100 cups for $3.16");
+                        Console.WriteLine("How many ice cubes would you like \n 125 ice cubes for $.97 \n 250 ice cubes for $2.00 \n 500 ice cubes for $4.25");
                         Number = double.Parse(Console.ReadLine());
                         SellIceCubes(player, Number);
                         break;
