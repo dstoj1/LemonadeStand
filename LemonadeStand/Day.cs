@@ -8,7 +8,7 @@ namespace LemonadeStand
 {
     public class Day
     {
-        public Customer customer = new Customer();
+       
         public List<Customer> CustomerList;
         public Weather weather = new Weather();
         public Day()

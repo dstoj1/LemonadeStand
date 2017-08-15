@@ -99,9 +99,10 @@ namespace LemonadeStand
             }
         }
         public void SellCups(Player player)
-        {
+        {//Getting user input
             Console.WriteLine("How many cups would you like \n 25 cups for $.97 \n 50 cups for $1.75 \n 100 cups for $3.16");
             double Number = double.Parse(Console.ReadLine());
+            //Setting Price
             double price;      
             if (Number == 25)
             {
@@ -121,8 +122,11 @@ namespace LemonadeStand
                 price = 0;
                 SellCups(player);
             }
+            //Check if player has enough for sale (most of this should be in a wallet/money class
+            //Making the sale (withdrawing  money adding supplies
             if (price < player.money)
             {
+               
                 for (double i = 0; i < Number; i++)
                 {
                     Cups cups = new Cups();

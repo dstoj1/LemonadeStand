@@ -14,6 +14,7 @@ namespace LemonadeStand
         Day day;
         Weather weather;
         Customer customer;
+        Instruction instructions;
         
 
 
@@ -23,14 +24,16 @@ namespace LemonadeStand
            day = new Day();
            store = new Store();
            weather = new Weather();
+           instructions = new Instruction();
         }
        
         public void RunGame()
         {
+           instructions.DisplayInstrucstions();
            weather.GetWeather();
            weather.MakeWeather();
            store.GetSupplies(player);
-            player.inventory.DisplayInventory();
+           player.inventory.DisplayInventory();
         }
     }
 

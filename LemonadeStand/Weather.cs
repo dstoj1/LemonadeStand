@@ -27,19 +27,19 @@ namespace LemonadeStand
             switch (TodaysWeather)
             {
                 case "Sunny":
-                    Console.WriteLine("Sunny and Beautiful \n High 86 Today");
+                    Console.WriteLine("Sunny and Beautiful \n High 86 Today \n");
                     Temp = 86;
                     break;
                 case "Partly Cloudy":
-                    Console.WriteLine("Warm \n High 81");
+                    Console.WriteLine("Warm \n High 81 \n");
                     Temp = 81;
                     break;
                 case "Cloudy":
-                    Console.WriteLine("Cloudy and Muggy \n High 78");
+                    Console.WriteLine("Cloudy and Muggy \n High 78 \n");
                     Temp = 78;
                     break;
                 case "Rainy":
-                    Console.WriteLine("Rainy and Cold \n High 65");
+                    Console.WriteLine("Rainy and Cold \n High 65 \n");
                     Temp = 65;
                     break;
                 default:
