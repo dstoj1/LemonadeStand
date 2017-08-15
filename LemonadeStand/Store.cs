@@ -178,24 +178,30 @@ namespace LemonadeStand
         }
         public void GetSupplies(Player player)
         {
-            Console.WriteLine("What would you like to purchase? \n Lemons \n Sugar \n Ice Cubes \n Cups");
-            Supplies = Console.ReadLine().ToLower();
-
-            switch (Supplies)
-            {
-                case "lemons":
-                    SellLemons(player);
-                    break;
-                case "sugar":
-                    SellSugar(player);
-                    break;
-                case "ice cubes":
-                    SellIceCubes(player);
-                    break;
-                case "cups":
-                    SellCups(player);
-                    break;
-            }
+          bool counter = true;
+             do
+              {
+                Console.WriteLine("What would you like to purchase? \n Lemons \n Sugar \n Ice Cubes \n Cups");
+                Supplies = Console.ReadLine().ToLower();
+                switch (Supplies)
+                {
+                    case "lemons":
+                        SellLemons(player);
+                        break;
+                    case "sugar":
+                        SellSugar(player);
+                        break;
+                    case "ice cubes":
+                        SellIceCubes(player);
+                        break;
+                    case "cups":
+                        SellCups(player);
+                        break;
+                    default:
+                        Console.WriteLine("Continue");
+                        continue;
+                }
+            } while(counter);
         }
     }
 }

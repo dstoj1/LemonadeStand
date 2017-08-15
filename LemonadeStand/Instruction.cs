@@ -15,7 +15,9 @@ namespace LemonadeStand
         
             public void DisplayInstrucstions()
         {
-            Console.WriteLine();
+            Console.WriteLine("Hello, Welcome to the Lemonade Stand game.");
+            Console.WriteLine("The object of the game is to make as much money as you can.");
+            Console.WriteLine("You have control of your recipe, the type of ingredients you use, and the price of your product.");
         }
         
         }
