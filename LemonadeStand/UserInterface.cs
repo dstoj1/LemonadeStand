@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    public class Instruction
+    public class UserInterface
     {
-        public Instruction()
+        public UserInterface()
         {
 
         }

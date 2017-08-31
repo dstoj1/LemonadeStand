@@ -24,6 +24,16 @@ namespace LemonadeStand
 
         Recipe SourLemonade = new Recipe(6, 1, 10);
 
+        public int getPriceEffect()
+        {
+            int priceEffect;
+            double cost;
+            if(cost == 1.00)
+            {
+                priceEffect = 23;
+            }
+        }
+
         // Money
         //   Starting amount is $25.00
          

@@ -42,7 +42,7 @@ namespace LemonadeStand
             int  NumberOfCustomers = 150;
             for (int i = 0; i < NumberOfCustomers; i++)
             {
-                Customer customer = new Customer();
+                Customer customer = new Customer(weather);
 
             }
         }

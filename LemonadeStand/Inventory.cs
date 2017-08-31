@@ -55,5 +55,37 @@ namespace LemonadeStand
                 IceList.Add(ice);
             }
         }
+        public void RemoveIce(double Number)
+        {
+            for(double i = 0; i < Number; i++)
+            {
+                Ice ice = new Ice();
+                IceList.RemoveAt(0);
+            }
+        }
+        public void RemoveSugar(double Number)
+        {
+            for(double i = 0; i < Number; i++)
+            {
+                Sugar sugar = new Sugar();
+                SugarList.RemoveAt(0);
+            }
+        }
+        public void RemoveLemon(double Number)
+        {
+            for (double i = 0; i < Number; i++)
+            {
+                Lemon lemon = new Lemon();
+                LemonList.RemoveAt(0);
+            }
+        }
+        public void RemoveCups(double Number)
+        {
+            for(double i = 0; i < Number; i++)
+            {
+                Cups cups = new Cups();
+                CupsList.RemoveAt(0);
+            }
+        }
     }
 }

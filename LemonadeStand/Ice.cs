@@ -11,10 +11,10 @@ namespace LemonadeStand
         public double IceCubes;
 
 
-        public Ice()
-        {
+       // public Ice()
+        //{
 
-        }
+        //}
         //Ice melts everyday, so need ice everyday
       //  public void Ice
         //{

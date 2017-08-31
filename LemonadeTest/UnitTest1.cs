@@ -16,12 +16,11 @@ namespace LemonadeTest
             weather.GetWeather();
             //Assert
             Assert.IsTrue(weather.TodaysWeather == "Sunny" || weather.TodaysWeather == "Partly Cloudy" || weather.TodaysWeather == "Cloudy" || weather.TodaysWeather == "Rainy");
-
         }
 
         [TestMethod]
 
-        public void MakeWeather_Sunny_Temp86()
+        public void MakeWeather_Sunny_Temperature86()
         {
             //Arrange
             Weather weather = new Weather();
@@ -44,12 +43,10 @@ namespace LemonadeTest
             store.SellIceCubes(player, Number);
             double result = player.wallet.money;
             //Assert
-            Assert.AreEqual(expectedResult, result);
-           
-            
-
+            Assert.AreEqual(expectedResult, result);          
         }
         [TestMethod]
+
         public void SellIceCubes_Add_To_Inventory()
         {
             //Arrange
@@ -62,9 +59,6 @@ namespace LemonadeTest
             int result = player.inventory.IceList.Count;
             //Assert
             Assert.AreEqual(expectedResult, result);
-
-
-
         }
     }  
 }

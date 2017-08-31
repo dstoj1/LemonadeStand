@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LemonadeStand", "LemonadeSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LemonadeTest", "LemonadeTest\LemonadeTest.csproj", "{EACFF614-E0ED-4828-871C-9B5572323C34}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{C8F3657F-F4C9-4695-A1E8-222A8BAFC9F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EACFF614-E0ED-4828-871C-9B5572323C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EACFF614-E0ED-4828-871C-9B5572323C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EACFF614-E0ED-4828-871C-9B5572323C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F3657F-F4C9-4695-A1E8-222A8BAFC9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F3657F-F4C9-4695-A1E8-222A8BAFC9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F3657F-F4C9-4695-A1E8-222A8BAFC9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F3657F-F4C9-4695-A1E8-222A8BAFC9F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
